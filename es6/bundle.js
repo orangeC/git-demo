@@ -44,7 +44,13 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	console.log("hehe")
+	"use strict";
+
+	var add = function add(x, y) {
+	  return x + y;
+	};
+
+	alert(add(2, 2));
 
 /***/ }
 /******/ ]);
