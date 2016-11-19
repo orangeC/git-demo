@@ -3,6 +3,12 @@ import bg from "./img/2.jpg"
 
 
 class Header extends React.Component{
+	constructor(){
+		super();
+		this.state={
+			show:true
+		}
+	}
 	styles(){
 		return {
 			color:"blue"
@@ -15,7 +21,7 @@ class Header extends React.Component{
 				padding:"0"
 			},
 			li:{
-				display:"inline-block",
+				display:this.state.show ? "block" : "inline-block",
 				padding:"10px 20px"
 			},
 			main:{
@@ -34,7 +40,7 @@ class Header extends React.Component{
 						<li style={styles.li}>Components</li>
 						<li style={styles.li}>Javascript</li>
 					</ul>
-					<img src={bg} alt="bg2" />
+					<button onClick={ () => this.setState({show:!this.state.show}) }>按钮</button>
 				</div>
 			)
 	}
