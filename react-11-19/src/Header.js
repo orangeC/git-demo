@@ -16,13 +16,17 @@ class Header extends React.Component{
 			li:{
 				display:"inline-block",
 				padding:"10px 20px"
+			},
+			main:{
+				margin:"0 auto",
+				border:"3px bolid "
 			}
 		}
 		console.log(this.styles())
 		return (
-				<div>
+				<div style={styles.main}>
 					<h1 style={this.styles()}>get Bootstrap</h1>
-					<ul style={styles.ul}>
+					<ul style={styles.ul} className="menu">
 						<li style={styles.li}>Bootstrap</li>
 						<li style={styles.li}>get start</li>
 						<li style={styles.li}>CSS</li>

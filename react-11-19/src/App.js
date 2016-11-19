@@ -4,8 +4,14 @@ import Header from "./Header"
 
 class App extends React.Component{
 	render(){
+		let styles={
+			main:{
+				minWidth:"1020px"
+				
+			}
+		}
 		return (
-				<div>
+				<div style={styles.main}>
 					<Header />
 				</div>
 			)
