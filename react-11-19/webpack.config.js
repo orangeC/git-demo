@@ -34,6 +34,10 @@ module.exports = {
     {
       test: /\.(jpe?g|png)$/,
       loader: 'file-loader'
+    },
+    {
+      test: /\.css/,
+      loader: 'style!css'
     }
     
   ]
