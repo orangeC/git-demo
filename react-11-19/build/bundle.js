@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4f687b1e8284e1196380"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "01b495eaa3ea19458185"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -23022,10 +23022,6 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _ = __webpack_require__(/*! ./img/1.jpg */ 187);
-	
-	var _2 = _interopRequireDefault(_);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23048,16 +23044,15 @@
 			value: function render() {
 				var styles = {
 					main: {
-						minWidth: "1020px",
-						backgroundImage: "url(" + _2.default + ")"
+						minWidth: "1020px"
+	
 					}
 				};
-				console.log(_2.default);
+	
 				return _react2.default.createElement(
 					"div",
 					{ style: styles.main },
-					_react2.default.createElement(_Header2.default, null),
-					_react2.default.createElement("img", { src: _2.default, alt: "bg1" })
+					_react2.default.createElement(_Header2.default, null)
 				);
 			}
 		}]);
@@ -23085,6 +23080,10 @@
 	var _react = __webpack_require__(/*! react */ 4);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _ = __webpack_require__(/*! ./img/2.jpg */ 187);
+	
+	var _2 = _interopRequireDefault(_);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -23164,7 +23163,8 @@
 							{ style: styles.li },
 							"Javascript"
 						)
-					)
+					),
+					_react2.default.createElement("img", { src: _2.default, alt: "bg2" })
 				);
 			}
 		}]);
@@ -23177,11 +23177,11 @@
 /***/ },
 /* 187 */
 /*!***********************!*\
-  !*** ./src/img/1.jpg ***!
+  !*** ./src/img/2.jpg ***!
   \***********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fc65053c10b1a7599616276604ad9a8c.jpg";
+	module.exports = __webpack_require__.p + "e04688f676c8e1044735ce8c95999637.jpg";
 
 /***/ }
 /******/ ]);
