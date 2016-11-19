@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import bg from "./img/2.jpg"
 
 
 class Header extends React.Component{
@@ -33,6 +34,7 @@ class Header extends React.Component{
 						<li style={styles.li}>Components</li>
 						<li style={styles.li}>Javascript</li>
 					</ul>
+					<img src={bg} alt="bg2" />
 				</div>
 			)
 	}

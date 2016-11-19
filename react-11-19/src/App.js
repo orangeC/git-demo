@@ -2,6 +2,7 @@ import React from "react"
 import Header from "./Header"
 
 
+
 class App extends React.Component{
 	render(){
 		let styles={
@@ -10,6 +11,7 @@ class App extends React.Component{
 				
 			}
 		}
+		
 		return (
 				<div style={styles.main}>
 					<Header />

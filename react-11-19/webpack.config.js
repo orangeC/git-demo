@@ -9,7 +9,8 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath:"/build/"
     },
     devtool: 'cheap-module-source-map',
     devServer: {
@@ -35,6 +36,10 @@ module.exports = {
     {
       test: /\.css/,
       loader: 'style!css'
+    },
+    {
+      test: /\.(jpe?g|png)$/,
+      loader: 'file-loader'
     }
     
   ]
