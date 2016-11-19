@@ -1,5 +1,5 @@
 var path = require('path');
-var webpack = require("webpack");
+// var webpack = require("webpack");
 
 console.log(webpack);
 
@@ -22,11 +22,6 @@ module.exports = {
   module: {
   loaders: [
     { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
-    
-    {
-      test: /\.(jpe?g|png)$/,
-      loader: 'file-loader'
-    },
     {
       test: /\.css/,
       loader: 'style!css'
